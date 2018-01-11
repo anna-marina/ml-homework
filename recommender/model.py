@@ -1,5 +1,4 @@
 import random
-import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy import sparse
 
@@ -73,7 +72,7 @@ def get_top_songs(user):
 
 def print_top_songs_for_user(user):
     top_songs = get_top_songs(user)
-    print("Top n songs for user with ratings: ")
+    print("Top 10 songs for user with ratings: ")
     for (rating, song) in top_songs:
         print(song, str(rating[0][0]))
 
